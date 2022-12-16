@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="section__header">
+        <div class="bg__header"></div>
+      </header>
+
+      <div class="menu">
+        <div class="logo">
+          <div class="logo_starbucks">
+            <img
+              src="https://www.starbucks.vn/media/jlrf0uhs/logo_tcm89-366_w1024_n.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="logo_map">
+            <a href="">
+              <img
+                src="https://www.starbucks.vn/assets/images/map%20marker.svg"
+                alt=""
+              />
+            </a>
+            <i data-open="true" class="ri-menu-2-line i_class"></i>
+            <i data-open="flase" class="ri-close-line i_class"></i>
+          </div>
+        </div>
+        <ul class="content_nav none">
+          <li>CÀ PHÊ</li>
+          <li>THỰC ĐƠN</li>
+          <li>QUÁN CÀ PHÊ</li>
+          <li>TRÁCH NHIỆM</li>
+          <li>VỀ CHÚNG TÔI</li>
+          <li>THẺ</li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <img
+          src="https://www.starbucks.vn/media/audgfoso/fy23_holiday_mobile-banner.jpg"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="main__img">
+        <img
+          src="
+          https://www.starbucks.vn/media/s5hlhw2z/our-espresso_tcm89-24616_w1024_n.png
+          "
+          alt=""
+        />
+
+        <img
+          src="https://www.starbucks.vn/media/2rbbcpzs/opportunity_tcm89-24617_w1024_n.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="footer__top">
+        <i class="ri-facebook-fill"></i>
+
+        <i class="ri-instagram-line"></i>
+      </div>
+      <div class="solid"></div>
+    </div>
+    <div class="footer__main">
+      <div class="footer__h3">
+        <div class="h3__vechungtoi i__h3">
+          <h3>VỀ CHÚNG TÔI</h3>
+          <i onclick="showmenu(this)" class="ri-arrow-down-s-line">
+            <div class="conten__drop">
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">di sản</a>
+                <a href="#about">công ty</a>
+                <a href="#contact">cơ hội nghề nghiệp</a>
+              </div>
+            </div>
+          </i>
+        </div>
+      </div>
+
+      <div class="footer__h3">
+        <div class="h3__dichvukhachhang i__h3">
+          <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+          <i onclick="showmenu(this)" class="ri-arrow-down-s-line">
+            <div class="conten__drop">
+              <div id="myDropdown" class="dropdown-content">
+                <a href="./about.html ">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div></i
+          >
+        </div>
+      </div>
+
+      <div class="footer__h3">
+        <div class="h3__lienketthanhtoan i__h3">
+          <h3>LIÊN KẾT THANH TOÁN</h3>
+          <i onclick="showmenu(this)" class="ri-arrow-down-s-line">
+            <div class="conten__drop">
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div></i
+          >
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="language__main">
+        <div class="flag__vn">
+          <div class="logo__flag__vn">
+            <span>
+              <img
+                src="https://www.starbucks.vn/assets/images/VietNam_tcm89-24771_w1024_n.png"
+                alt=""
+                srcset=""
+              />
+            </span>
+          </div>
+
+          <div class="logo__arrow">
+            <i class="ri-arrow-drop-right-line"></i>
+          </div>
+        </div>
+
+        <div class="language__tiengviet">Tiếng Việt (VN)</div>
+
+        <div class="language__english">
+          <a href="">EngLish</a>
+          <i class="ri-arrow-drop-right-line"></i>
+        </div>
+      </div>
+
+      <div class="footer__bottom__content">
+        <ul>
+          <li>khả năng truy cập Web</li>
+          <li>Chính Sách Bảo Mật Thông Tin</li>
+          <li>Điều Khoản Sử Dụng</li>
+          <li>Sơ Đồ Trang Web</li>
+          <li>Tùy Chọn Cookie</li>
+        </ul>
+      </div>
+
+      <div class="footer__end">
+        © 2022 Starbucks Coffee Company. Mọi quyền được bảo lưu.
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
+<script>
+  function showmenu(node) {
+    node.querySelector(".conten__drop").classList.toggle("show");
+    node.parentNode.parentNode.classList.toggle("heigh");
+  }
+</script>
